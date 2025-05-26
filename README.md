@@ -45,7 +45,7 @@ npm install
 ### 3. Environment Variables
 Create a .env file and add:
 ```bash
-PORT=5000
+PORT=4000
 MONGO_URI=mongodb://localhost:27017/ecommerce_admin
 ```
 
