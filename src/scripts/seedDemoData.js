@@ -17,8 +17,8 @@ const seed = async () => {
   await Inventory.create({ product: product1._id, quantity: 5 });
   await Inventory.create({ product: product2._id, quantity: 50 });
 
-  await Sale.create({ product: product1._id, quantity: 2, totalPrice: 1998, date: new Date() });
-  await Sale.create({ product: product2._id, quantity: 5, totalPrice: 600, date: new Date() });
+  await Sale.create({ product: product1._id, quantity: 2, totalPrice: 1998 });
+  await Sale.create({ product: product2._id, quantity: 5, totalPrice: 600 });
 
   console.log('Demo data inserted');
   process.exit();

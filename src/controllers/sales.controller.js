@@ -10,3 +10,13 @@ exports.getSales = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.getRevenue = async (req, res, next) => {
+  try {
+    const filter = buildSalesQuery(req.query);
+    const { revenue } = await salesService.getSalesData(filter);
+    res.json({ revenue });
+  } catch (err) {
+    next(err);
+  }
+};
